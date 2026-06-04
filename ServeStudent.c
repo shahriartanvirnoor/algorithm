@@ -142,6 +142,9 @@ printf("Thank you.\n");
      }
     newNode* temp = front;
     front = front->next;
+     if(front==NULL){
+         rear = NULL;
+     }
     free(temp);
 
  }
